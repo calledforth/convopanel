@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "undefined/subscriptions/613585f6-3ab0-4640-9bad-d623f8366968/resourceGroups/CletusR-RG/providers/Microsoft.Web/sites/ConvoCanvas",
+    "appService.deploySubpath": "."
+}

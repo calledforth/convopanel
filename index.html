@@ -1,0 +1,61 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>ConvoPanel</title>  
+    <link rel="stylesheet" href="styles.css">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">  
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">  
+</head>  
+<body>  
+
+    <div class="chat-header" style="height: 0px; width: 5px; position: absolute;
+    top: 65px;
+    left: 25px;">  
+        <h1 style="color:  cyan;">ConvoPanel</h1>  
+    </div>  
+
+    <div class="app-container">  
+        <div class="prompt-library" id="prompt-library">  
+            <!-- Sidebar content will be dynamically inserted here -->  
+        </div>  
+        <div class="main-content">  
+            <div class="chat-interface">  
+                <div class="chat-window" id="chat-window"></div>  
+                <div class="input-area">  
+                    <input type="text" id="user-input" placeholder="Type your message...">  
+                    <button id="send-button">  
+                        <i class="fa-solid fa-paper-plane"></i>  
+                    </button>  
+                </div>  
+            </div>  
+        </div>  
+    </div>  
+  
+    <!-- Edit Dialog -->  
+    <div id="edit-dialog" class="modal" style="display: none;">  
+        <div class="modal-content">  
+            <div class="modal-header">  
+                <h2>Edit Category</h2>  
+                <span class="close">&times;</span>  
+            </div>  
+            <div class="modal-body">  
+                <label for="edit-category-name">Category Name:</label>  
+                <input type="text" id="edit-category-name" required>  
+                <label for="edit-num-prompts">Number of Prompts:</label>  
+                <input type="number" id="edit-num-prompts" min="1" required>  
+                <div id="edit-prompt-fields">  
+                    <!-- Editable prompt fields will be dynamically inserted here -->  
+                </div>  
+            </div>  
+            <div class="modal-footer">  
+                <button id="save-changes">Save</button>  
+                <button class="close">Cancel</button>  
+            </div>  
+        </div>  
+    </div>  
+  
+    <script src="script.js"></script>  
+</body>  
+</html>  
